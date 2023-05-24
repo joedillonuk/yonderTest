@@ -18,7 +18,11 @@ function Nav() {
 
 
     return (
-      <div className="nav-bar">
+      <nav className="nav-bar">
+        <div className='container'>
+        <div className="logo">
+            <p>Yonder Logo</p>
+        </div>
         <ul style={styles.ul}>
             <li>Home</li>
             <li>About</li>
@@ -26,9 +30,10 @@ function Nav() {
             <li>Social</li>
         </ul>
         <div className='hamburger' onClick={toggleHamburger}>
-            <Hamburger />
+            <Hamburger isOpen={hamburgerOpen} />
         </div>
-      </div>
+        </div>
+      </nav>
     );
   }
   
