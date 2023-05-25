@@ -1,6 +1,7 @@
 import './Nav.css';
 import Hamburger from './Hamburger';
 import { useState } from 'react';
+import { ReactComponent as Brand } from './logoTemp.svg';
 function Nav() {
 
     const [hamburgerOpen, setHamburgerOpen] = useState(true);
@@ -21,6 +22,7 @@ function Nav() {
       <nav className="nav-bar">
         <div className='container'>
         <div className="logo">
+            <Brand />
             <p>Yonder Logo</p>
         </div>
         <ul style={styles.ul}>
